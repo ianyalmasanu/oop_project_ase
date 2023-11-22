@@ -3,8 +3,12 @@
 #include <conio.h>
 #include <stdlib.h>
 #include "MovieTeather.h"
+#include "Ticket.h"
+
+using namespace std;
 
 int main() {
-std::cout << std::endl << "Hello World!";
-std::cout << std::endl << "This is nice!";
+	cout << "Select movie from pool:\n";
+
+
 }

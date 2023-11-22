@@ -1,4 +1,6 @@
 #pragma once
+#ifndef MOVIETEATHER_H
+#define MOVIETEATHER_H
 
 class MovieTeather
 {
@@ -22,26 +24,19 @@ private:
 		"The Jam"
 	};
 
+	void ListMoviesAvailable();
+	void GenerateSeatNo();
 
-	void GenerateSeatNo() {
-	
-		for (int row = 1; row <= nRows; row++) {
-			for (int seat = 1; seat <= seatsPerRow; seat++) {
-				int seatNumber = (row - 1) * seatsPerRow + seat; //e.g. max seat number is 200 and max row is 10
-			}
-		}
-	}
 
 public: 
-	//setters
-	void setLocation(char newLocation) {
-		this->location = newLocation;
-	}
-	void setMovie(int index, const char* newMovie) {
-		if (index >= 0 && index < 10) {
-			strncpy(currentMovies[index], newMovie, sizeof(currentMovies[index]) - 1);
-		}
+
+	MovieTeather() {
+
 	}
 
+
 };
+
+#endif
+
 
