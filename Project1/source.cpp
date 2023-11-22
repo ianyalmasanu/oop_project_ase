@@ -2,6 +2,7 @@
 #include <string>
 #include <conio.h>
 #include <stdlib.h>
+#include "MovieTeather.h"
 
 int main() {
 std::cout << std::endl << "Hello World!";

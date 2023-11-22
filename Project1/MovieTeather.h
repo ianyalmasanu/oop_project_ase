@@ -32,5 +32,16 @@ private:
 		}
 	}
 
+public: 
+	//setters
+	void setLocation(char newLocation) {
+		this->location = newLocation;
+	}
+	void setMovie(int index, const char* newMovie) {
+		if (index >= 0 && index < 10) {
+			strncpy(currentMovies[index], newMovie, sizeof(currentMovies[index]) - 1);
+		}
+	}
+
 };
 
