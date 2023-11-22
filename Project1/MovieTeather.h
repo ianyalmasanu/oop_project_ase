@@ -10,8 +10,14 @@ private:
 	const int seatsPerRow = 20;
 	int generated = 0;
 	int available_seats = max_seats - generated;
-	char location;
-	char currentMovies[10][30] = {
+	enum locations {
+		HALL_A,
+		HALL_B,
+		HALL_C,
+		HALL_D
+	};
+	enum {noMovies = 10};
+	const char* movieTitles[noMovies] = {
 		"Abracadabra",
 		"Plan B",
 		"Baltimore Dawn",
@@ -24,11 +30,13 @@ private:
 		"The Jam"
 	};
 
+public:
 	void ListMoviesAvailable();
 	void GenerateSeatNo();
+	void SelectMovie();
 
 
-public: 
+
 
 	MovieTeather() {
 

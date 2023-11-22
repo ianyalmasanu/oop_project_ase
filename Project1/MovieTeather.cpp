@@ -5,9 +5,15 @@
 using namespace std;
 
 	void MovieTeather::ListMoviesAvailable() {
-		for (int i = 1; i <= 10; i++) {
-			cout << currentMovies[i][30] << "\n";
+	//	for (int i = 0; i <10; i++) {
+	//		cout << this->currentMovies[i][30] << "\n";
+		for (int i=0; i<noMovies; i++){
+			cout << i + 1 << ". " << movieTitles[i] << std::endl;
 		};
+	}
+
+	void MovieTeather::SelectMovie() {
+
 	}
 
 
@@ -20,9 +26,7 @@ using namespace std;
 		}
 	}
 
-	MovieTeather::MovieTeather() {
-
-}
+	
 
 
 

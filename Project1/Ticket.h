@@ -4,11 +4,11 @@
 class Ticket
 {
 private:
-	int tID;
-	char tMovie;
-	int tSeat;
-	int tRow;
-	char tLocation[10][20];
+	int tID = 0;
+	char tMovie[30] = {"N/A"};
+	int tSeat = 0;
+	int tRow = 0;
+	char tLocation[10][20] = { "N/A" };
 
 public:
 
