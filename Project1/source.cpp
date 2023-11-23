@@ -9,7 +9,6 @@ using namespace std;
 
 int main() {
 	MovieTeather myMovie;
-	cout << "Select movie from pool:\n";
 	myMovie.ListMoviesAvailable();
-
+	myMovie.SelectMovie();
 }

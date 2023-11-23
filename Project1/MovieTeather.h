@@ -33,7 +33,7 @@ private:
 public:
 	void ListMoviesAvailable();
 	void GenerateSeatNo();
-	void SelectMovie();
+	int SelectMovie();
 
 
 
