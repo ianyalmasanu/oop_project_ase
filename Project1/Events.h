@@ -23,7 +23,7 @@ class Events {
 	
 public:
 	void addRow(const string& column1, const string& column2, const string& column3) {
-		rows.emplace_back(column1, column2);
+		rows.emplace_back(column1, column2, column3);
 	}
 
 	void displayTable() const {
