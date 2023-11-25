@@ -4,7 +4,7 @@
 
 using namespace std;
 
-	void MovieTeather::ListMoviesAvailable() {
+	void MovieTheater::ListMoviesAvailable() {
 		cout << "Select movie number from pool:\n";
 		for (int i=0; i<noMovies; i++){
 			cout << i + 1 << ". " << movieTitles[i] << std::endl;
@@ -14,7 +14,7 @@ using namespace std;
 
 
 
-	int MovieTeather::SelectMovie() {
+	int MovieTheater::SelectMovie() {
 		double inputMovNo;
 		cin >> inputMovNo;
 	//	if (inputMovNo >= 1 && inputMovNo <=10 && (inputMovNo-(int)inputMovNo) > 0) {
@@ -32,7 +32,7 @@ using namespace std;
 			cin.clear();  // Clear the error flag
 			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // ignore non full-integer characters
 			cout << "Please enter a valid movie number:\n";
-			MovieTeather::SelectMovie();
+			MovieTheater::SelectMovie();
 		}
 	}
 

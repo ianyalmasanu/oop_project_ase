@@ -2,7 +2,7 @@
 #ifndef MOVIETHEATER_H
 #define MOVIETHEATHER_H
 
-class MovieTeather
+class MovieTheater
 {
 private:
 	const int max_seats = 200;
@@ -34,11 +34,13 @@ public:
 	void ListMoviesAvailable();
 	void GenerateSeatNo();
 	int SelectMovie();
+	void ListAvailableHours();
+	int SelectHour();
+	
 
 
 
-
-	MovieTeather() {
+	MovieTheater() {
 
 	}
 
