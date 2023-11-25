@@ -18,18 +18,24 @@
     <ClCompile Include="source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MovieTeather.cpp">
+    <ClCompile Include="MovieTheater.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Ticket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AvenueSelect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MovieTeather.h">
+    <ClInclude Include="MovieTheater.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Ticket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AvenueSelect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

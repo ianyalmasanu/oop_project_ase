@@ -2,13 +2,19 @@
 #include <string>
 #include <conio.h>
 #include <stdlib.h>
-#include "MovieTeather.h"
+#include "MovieTheater.h"
 #include "Ticket.h"
+#include "AvenueSelect.h"
 
 using namespace std;
 
 int main() {
+	AvenueSelect myAvenue;
 	MovieTeather myMovie;
-	myMovie.ListMoviesAvailable();
-	myMovie.SelectMovie();
+	myAvenue.ListAvenues();
+	int selectedAvenue = myAvenue.SelectAvenue();
+	if (selectedAvenue == 1) {
+		myMovie.ListMoviesAvailable();
+		myMovie.SelectMovie();
+	}
 }

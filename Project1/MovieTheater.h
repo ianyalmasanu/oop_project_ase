@@ -1,6 +1,6 @@
 #pragma once
-#ifndef MOVIETEATHER_H
-#define MOVIETEATHER_H
+#ifndef MOVIETHEATER_H
+#define MOVIETHEATHER_H
 
 class MovieTeather
 {

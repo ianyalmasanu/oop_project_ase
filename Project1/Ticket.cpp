@@ -1,5 +1,5 @@
 #include "Ticket.h"
-#include "MovieTeather.h"
+#include "MovieTheater.h"
 #include <iostream>
 #include <string.h>
 

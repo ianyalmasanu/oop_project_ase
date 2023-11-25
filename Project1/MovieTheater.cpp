@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string.h>
-#include "MovieTeather.h"
+#include "MovieTheater.h"
 
 using namespace std;
 
@@ -10,6 +10,9 @@ using namespace std;
 			cout << i + 1 << ". " << movieTitles[i] << std::endl;
 		};
 	}
+
+
+
 
 	int MovieTeather::SelectMovie() {
 		double inputMovNo;
@@ -27,7 +30,7 @@ using namespace std;
 		}
 		else {
 			cin.clear();  // Clear the error flag
-			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // Discard invalid input
+			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // ignore non full-integer characters
 			cout << "Please enter a valid movie number:\n";
 			MovieTeather::SelectMovie();
 		}
