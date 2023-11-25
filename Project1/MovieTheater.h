@@ -32,10 +32,12 @@ private:
 
 public:
 	void ListMoviesAvailable();
-	void GenerateSeatNo();
 	int SelectMovie();
 	void ListAvailableHours();
 	int SelectHour();
+
+
+	void GenerateSeatNo();
 	
 
 

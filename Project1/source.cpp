@@ -10,7 +10,7 @@ using namespace std;
 
 int main() {
 	AvenueSelect myAvenue;
-	MovieTeather myMovie;
+	MovieTheater myMovie;
 	myAvenue.ListAvenues();
 	int selectedAvenue = myAvenue.SelectAvenue();
 	if (selectedAvenue == 1) {

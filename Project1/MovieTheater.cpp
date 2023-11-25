@@ -39,7 +39,7 @@ using namespace std;
 
 
 
-	void MovieTeather::GenerateSeatNo() {
+	void MovieTheater::GenerateSeatNo() {
 
 		for (int row = 1; row <= nRows; row++) {
 			for (int seat = 1; seat <= seatsPerRow; seat++) {
