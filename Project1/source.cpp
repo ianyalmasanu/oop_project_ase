@@ -11,10 +11,7 @@
 using namespace std;
 
 int main() {
-	/*Events myEvent;
-	fillMoviesScheduler(myEvent);
-	myEvent.displayTable();*/
-
+	Events myEvent;
 	AvenueSelect myAvenue;
 	MovieTheater myMovie;
 	myAvenue.ListAvenues();
@@ -22,5 +19,6 @@ int main() {
 	if (selectedAvenue == 1) {
 		myMovie.ListMoviesAvailable();
 		myMovie.SelectMovie();
+		
 	}
 }

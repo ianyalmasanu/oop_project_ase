@@ -30,3 +30,10 @@ MovieSchedules.addRow("Baltimore Dawn", "22:00", "C");
 MovieSchedules.addRow("Markus Zein", "22:00", "D");
 MovieSchedules.displayTable();
 }
+
+void fillPlayScheduler(Events& PlaySchedules) {
+
+}
+void fillFootballScheduler(Events& FootballSchedules) {
+
+}
