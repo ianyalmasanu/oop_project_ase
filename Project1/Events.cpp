@@ -3,6 +3,12 @@
 #include <vector>
 #include "Events.h"
 
+Events::EventRow::EventRow(const string& column1, const string& column2) :
+	eventTitle(column1), eventHour(column2) {
+
+}
+
+
 Events::EventRow::EventRow(const string& column1, const string& column2, const string& column3) :
 	eventTitle(column1), eventHour(column2), eventLocation(column3) {
 
@@ -10,6 +16,10 @@ Events::EventRow::EventRow(const string& column1, const string& column2, const s
 
 Events::EventRow::EventRow(const string& column1, const string& column2, const string& column3, const string& column4) :
 	eventTitle(column1), eventHour(column2), eventLocation(column3), eventSubLocation(column4) {
+}
+
+void Events::addRow(const string& column1, const string& column2) {
+	rows.emplace_back(column1, column2);
 }
 
 void Events::addRow(const string& column1, const string& column2, const string& column3) {
@@ -20,22 +30,16 @@ void Events::addRow(const string& column1, const string& column2, const string& 
 }
 
 
-void Events::displayTable() const { //movie scheduler
+void Events::displayTable(int selectedEventType) const {
 	for (const auto& row : rows) {
-		cout << "Movie Title: " << row.eventTitle << ", hour: " << row.eventHour << ", HALL: " << row.eventLocation << endl;
+		switch (selectedEventType) {
+		case 1: cout << "Movie Title: " << row.eventTitle << ", hour: " << row.eventHour << ", HALL: " << row.eventLocation << endl;
+			break;
+		case 2: cout << "Play Title: " << row.eventTitle << ", hour: " << row.eventHour << endl;
+			break;
+		case 3: cout << "Football Match: " << row.eventTitle << ", hour: " << row.eventHour << ", Stand: " << row.eventLocation << ", Access: " << row.eventSubLocation << endl;
+		}
 	}
+
 }
 
-void Events::displayTable() const { //play scheduler -- will not work with same attributes
-	for (const auto& row : rows) {
-		cout << "Play Title: " << row.eventTitle << ", hour: " << row.eventHour << ", Hall Orientation: " << row.eventLocation << endl;
-	}
-}
-
-
-
-void Events::displayTable() const { //football match scheduler
-	for (const auto& row : rows) {
-		cout << "Football Match: " << row.eventTitle << ", hour: " << row.eventHour << ", Stand: " << row.eventLocation << ", PLACEHOLDER:" << row.eventSubLocation << endl;
-	}
-}

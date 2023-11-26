@@ -8,8 +8,8 @@ private:
 	enum { eTypeNo = 3 };
 	const char* eventsTypes[eTypeNo] = {
 		"Cinema",
-		"Football Match",
-		"Theater Play"
+		"Theater Play",
+		"Football Match"
 	};
 
 

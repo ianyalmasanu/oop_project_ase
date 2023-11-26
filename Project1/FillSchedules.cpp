@@ -28,12 +28,19 @@ MovieSchedules.addRow("Abracadabra", "22:00", "A");
 MovieSchedules.addRow("Plan B", "22:00", "B");
 MovieSchedules.addRow("Baltimore Dawn", "22:00", "C");
 MovieSchedules.addRow("Markus Zein", "22:00", "D");
-MovieSchedules.displayTable();
+
 }
 
 void fillPlayScheduler(Events& PlaySchedules) {
+	PlaySchedules.addRow("Symphony of Spring", "18:00");
+	PlaySchedules.addRow("Symphony of Spring", "20:00");
+	PlaySchedules.addRow("Night of Stars", "14:00");
+	PlaySchedules.addRow("Night of Stars", "16:00");
 
 }
 void fillFootballScheduler(Events& FootballSchedules) {
+	FootballSchedules.addRow("Ruby Hamsters VS Orange Moths", "20:00", "National Arena", "General Access");
+	FootballSchedules.addRow("Slate Spiders VS The Wild Bakers", "20:00", "South Stadium", "General Access");
+	FootballSchedules.addRow("The Sneaky Hatters VS Khaki Rangers", "20:00", "Sports Bay", "General Access");
 
 }

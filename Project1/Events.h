@@ -15,8 +15,9 @@ class Events {
 		string eventHour;
 		string eventLocation;
 		string eventSubLocation;
+		string eventOrientation;
 
-
+		EventRow(const string& column1, const string& column2);
 		EventRow(const string& column1, const string& column2, const string& column3);
 		EventRow(const string& column1, const string& column2, const string& column3, const string& column4);
 	};
@@ -24,9 +25,10 @@ class Events {
 	vector<EventRow> rows;
 	
 public:
+	void addRow(const string& column1, const string& column2);
 	void addRow(const string& column1, const string& column2, const string& column3);
 	void addRow(const string& column1, const string& column2, const string& column3, const string& column4);
-	void displayTable() const;
+	void displayTable(int selectedEventType) const;
 
 };
 #endif
