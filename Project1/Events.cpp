@@ -12,7 +12,9 @@ void Events::addRow(const string& column1, const string& column2, const string& 
 	rows.emplace_back(column1, column2, column3);
 }
 
-void Events::displayTable() const{
-	for(const auto& row : rows){
+void Events::displayTable() const {
+	for (const auto& row : rows) {
 		cout << "Movie Title: " << row.movieTitleL << ", hour: " << row.movieHourL << ", HALL " << row.movieHallL << endl;
+
+	}
 }

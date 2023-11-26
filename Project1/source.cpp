@@ -6,11 +6,15 @@
 #include "Ticket.h"
 #include "AvenueSelect.h"
 #include "Events.h"
+#include "FillSchedules.h"
 
 using namespace std;
 
 int main() {
-	//FillEvents MoviesSchedule;
+	/*Events myEvent;
+	fillMoviesScheduler(myEvent);
+	myEvent.displayTable();*/
+
 	AvenueSelect myAvenue;
 	MovieTheater myMovie;
 	myAvenue.ListAvenues();

@@ -131,11 +131,13 @@
     <ClCompile Include="Events.cpp" />
     <ClCompile Include="source.cpp" />
     <ClCompile Include="MovieTheater.cpp" />
+    <ClCompile Include="FillSchedules.cpp" />
     <ClCompile Include="Ticket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AvenueSelect.h" />
     <ClInclude Include="Events.h" />
+    <ClInclude Include="FillSchedules.h" />
     <ClInclude Include="MovieTheater.h" />
     <ClInclude Include="Ticket.h" />
   </ItemGroup>

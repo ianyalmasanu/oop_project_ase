@@ -5,7 +5,7 @@
 using namespace std;
 
 void AvenueSelect::ListAvenues() {
-		cout << "Select movie number from pool:\n";
+		cout << "Select the desired event type, by number:\n";
 		for (int i = 0; i < eTypeNo; i++) {
 			cout << i + 1 << ". " << eventsTypes[i] << std::endl;
 		};
